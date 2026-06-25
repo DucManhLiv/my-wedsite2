@@ -3,58 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liên Hệ</title>
+    <title>Liên hệ cá nhân của Đặng Đức Mạnh</title>
+    <meta
+      name="description"
+      content="Liên hệ với Đặng Đức Mạnh thông qua biểu mẫu trực tuyến để gửi câu hỏi, góp ý hoặc trao đổi thông tin học tập nhanh chóng."
+    />
   </head>
   <body>
     <header>
-        <h1>Đặng Đức Mạnh</h1>
-        <nav>
-            <ul>
-            <li><a href="index.html">Trang Chủ</a></li>
-            <li><a href="about.html">Giới Thiệu</a></li>
-            <li><a href="contact.html">Liên Hệ</a></li>
-            </ul>
-        </nav>
+      <h1>Đặng Đức Mạnh</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="about.html">Giới Thiệu</a></li>
+          <li><a href="contact.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <form action="#" method="POST">
-      <fieldset>
-        <legend>Thông tin</legend>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Thông tin</legend>
 
-        <label for="name">Họ tên:</label>
-        <input type="text" id="name" name="name" required minlength="2" />
+          <label for="name">Họ tên:</label>
+          <input type="text" id="name" name="name" required minlength="2" />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="phone">SDT:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" />
-      </fieldset>
+          <label for="phone">SDT:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" />
 
-      <fieldset>
-        <legend>Nội dung</legend>
+          <label for="date">Ngày sinh:</label>
+          <input type="date" id="date" name="date" required />
 
-        <select name="subject">
-          <option>Hỗ trợ</option>
-          <option>Hỗ trợ 2</option>
-        </select>
+          <label for="truong">Trường:</label>
+          <input list="ds-truong" id="truong" name="truong" />
 
-        <textarea id="msg" name="msg" rows="5" required> </textarea>
-      </fieldset>
+          <datalist id="ds-truong">
+            <option value="Đại học Gia Định"></option>
+            <option value="Đại học FPT"></option>
+            <option value="Đại học Bách Khoa Hà Nội"></option>
+            <option value="Đại học Quốc gia Hà Nội"></option>
+            <option value="Đại học Kinh tế Quốc dân"></option>
+          </datalist>
+        </fieldset>
 
-      <button type="submit">Gửi</button>
-      <button type="reset">Xóa</button>
-    </form>
-        
+        <fieldset>
+          <legend>Nội dung</legend>
+
+          <select name="subject">
+            <option>Hỗ trợ</option>
+            <option>Hỗ trợ 2</option>
+          </select>
+
+          <textarea id="msg" name="msg" rows="5" required> </textarea>
+        </fieldset>
+
+        <button type="submit">Gửi</button>
+        <button type="reset">Xóa</button>
+      </form>
     </main>
     <footer>
-        <p>&copy; 2024 Đặng Đức Mạnh. All rights reserved.</p>
-        <address>
-            Liên hệ: <address>Liên hệ: <a href="index.html">Trang Chủ</a></address>
-            Tel: <a href="tel:0123456789">0123456789</a>
-            <time datetime="2026-06-01">01/06/2026</time>
-        </address>
+      <p>&copy; 2024 Đặng Đức Mạnh. All rights reserved.</p>
+      <address>
+        Liên hệ:
+        <address>Liên hệ: <a href="index.html">Trang Chủ</a></address>
+        Tel: <a href="tel:0123456789">0123456789</a>
+        <time datetime="2026-06-01">01/06/2026</time>
+      </address>
     </footer>
-    
   </body>
 </html>
